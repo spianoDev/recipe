@@ -2,8 +2,8 @@
 {
     "title": "pie",
     "description": "Good",
-    "ingredients": ["flour", "sugar"],
-    "instructions": "IDK"
+    "instructions": "IDK",
+    "ingredients": ["flour", "sugar"]
 },
 {
     "title": "Alfredo",
