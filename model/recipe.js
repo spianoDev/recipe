@@ -7,5 +7,6 @@ const RecipeSchema = new mongoose.Schema( {
     ingredients: {type: Array, required: true}
 });
 
-const Recipe = mongoose.model("Recipe", RecipeSchema);
+const Recipe = mongoose.model("myRecipe", RecipeSchema);
+
 module.exports = Recipe;
