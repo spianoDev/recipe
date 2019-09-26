@@ -5,7 +5,7 @@ const Recipe = require("../model/recipe.js");
 
 router.get("/", (req, res) => {
     Recipe.find({}).then(recipes => {
-        console.log(recipes);
+
         res.render("index", { recipes })
     })
 });

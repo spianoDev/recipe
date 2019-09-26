@@ -1,6 +1,6 @@
-const myRecipe = require("../model/recipe.js");
+const Recipe = require("../model/recipe");
 const seeds = require("./seeds.json");
-myRecipe.insertMany(seeds).then(() => {
+Recipe.insertMany(seeds).then(() => {
     console.log("Who wants a recipe");
 }).then(() => {
     process.exit()});
