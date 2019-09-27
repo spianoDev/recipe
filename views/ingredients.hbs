@@ -3,12 +3,12 @@
 <ul>
     {{#each ingredients}}
    <li>{{this}}</li>
-<p><label for="complete">Complete</label>
+<label for="complete"></label>
         {{#if complete}}
-            <input type="checkbox" name="complete" checked>
+            <input type="checkbox" checked>
         {{else}}
-<input type="checkbox" name="complete">
-        {{/if}}</p>
+<input type="checkbox" >
+        {{/if}}
     {{/each}}
 </ul>
 
