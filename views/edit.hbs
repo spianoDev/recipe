@@ -1,0 +1,14 @@
+<form action="/{{ id }}?_method=put" method="post">
+    <label for="">Recipe Title
+<input type="text" value="{{title}}" name="title"required placeholder="*required*"></label>
+
+<label for="">description</label>
+<input type="text" value="{{description}}" name="description">
+
+<label for="">Ingredients</label>
+<input type="text" value="{{ingredients}}" name="ingredients"required placeholder="*required*">
+<label for="">Instructions</label>
+<input type="text" value="{{instructions}}" name="instructions"required placeholder="*required*">
+
+<input type="submit" value="Update Recipe">
+</form>

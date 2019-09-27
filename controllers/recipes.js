@@ -3,6 +3,21 @@ const express = require("express");
 const router = express.Router();
 const Recipe = require("../model/recipe.js");
 
+
+
+router.put("/:id", (req, res) => {
+    Recipe.findOneAndUpdate({ _id: req.params.id}, req.body).then(recipes =>{
+        res.redirect("/");
+    })
+});
+router.post("/", (req, res) => {
+    Recipe.create(req.body).then(recipes => {
+        console.log(req.body);
+        res.redirect("/");
+    })
+})
+
+
 router.get("/", (req, res) => {
     Recipe.find({}).then(recipes => {
         res.render("index", { recipes })
