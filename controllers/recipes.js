@@ -17,6 +17,12 @@ router.post("/", (req, res) => {
     })
 });
 
+router.delete("/:id", (req, res) => {
+    Recipe.findOneAndDelete({ _id: req.params.id}).then(() =>{
+res.redirect("/")
+    })
+});
+
 router.get("/", (req, res) => {
     Recipe.find({}).then(recipes => {
         res.render("index", { recipes })
@@ -30,6 +36,8 @@ router.get('/edit/:id', (req, res) => {
 router.get("/new", (req, res) => {
     res.render("new" )
 });
+
+
 router.get('/ingredients/:id', (req, res) => {
     Recipe.findOne({ _id: req.params.id }).then( recipes => {
         console.log(recipes);
