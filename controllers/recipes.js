@@ -8,10 +8,19 @@ router.get("/", (req, res) => {
         res.render("index", { recipes })
     })
 });
-
+router.get('/edit/:id', (req, res) => {
+    Recipe.findOne({ _id: req.params.id }).then( recipes => {
+        res.render("edit", recipes);
+    })
+});
 router.get("/new", (req, res) => {
     res.render("new" )
-})
+});
+router.get("/:id", (req,res) => {
+    Recipe.findOne({ _id: req.params.id }).then( recipes => {
+        res.render("recipe", recipes);
+    })
+});
 
 module.exports = router;
 
