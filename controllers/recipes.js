@@ -31,11 +31,9 @@ router.get("/new", (req, res) => {
     res.render("new" )
 });
 router.get('/ingredients/:id', (req, res) => {
-    // Recipe.findOne({ _id: req.params.id })
-    Recipe.findOne( {ingredients: req.params.ingredients})
-    
-        .then( ingredients => {
-        res.render("ingredients", ingredients);
+    Recipe.findOne({ _id: req.params.id }).then( recipes => {
+        console.log(recipes);
+        res.render("ingredients", recipes);
     })
 });
 router.get("/:id", (req,res) => {
