@@ -4,7 +4,7 @@ app.set("view engine", "hbs");
 
 const recipesController = require("./controllers/recipes.js");
 app.use("/", recipesController);
-//app.use(express.static('public/style.css'));
+app.use("/assets", express.static('public'));
 
 app.get("/" , (req, res) => {
     res.render("index", { title:req.params.title })

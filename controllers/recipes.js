@@ -8,5 +8,10 @@ router.get("/", (req, res) => {
         res.render("index", { recipes })
     })
 });
+
+router.get("/new", (req, res) => {
+    res.render("new" )
+})
+
 module.exports = router;
 
