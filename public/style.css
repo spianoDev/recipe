@@ -23,19 +23,27 @@ h3 {
     text-align: center;
     font-size: 55px;
 }
-h4{
+h4, label{
     font-family: 'Chelsea Market', cursive;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 40px;
+    /* margin-right: 40px; */
     font-size: 40px;
 }
 h4 a {
     color: #f5deb3;
 }
+h6 {
+    margin:40px 0 0 40px;
+    display: block;
+    font-family: 'Permanent Marker', cursive;
+    color: #00004b;
+    
+}
 a {
     font-family: 'Chelsea Market', cursive;
     text-decoration: none;
     color: #00004b;
+    margin-left: 40px;
 }
 li {
     font-family: 'Chelsea Market', cursive;
@@ -64,4 +72,23 @@ form {
     float: right;
     margin-left: 320px;
     margin-bottom: 50px;
+}
+li a{
+    margin-left: 40px;
+}
+ul {
+    padding: 0;
+}
+.button{
+    height: 350px;
+    width: 150px;
+    font-size: 100px;
+    font-family: 'Chelsea Market', cursive;
+    padding: 30px;
+    margin: 30px;
+    display: block;
+    left: 40%;
+}
+.link{
+    display: block;
 }

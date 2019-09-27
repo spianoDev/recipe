@@ -1,14 +1,14 @@
 <h3>{{title}}</h3>
 <form action="/{{ id }}?_method=put" method="post">
     <div class="recipe-items">
-        <label for="">Recipe Title
-        <input class="input" type="text" value="{{title}}" name="title" required placeholder="*required*"></label>
-        <label for="">description
-        <input class="input" type="text" value="{{description}}" name="description"></label>
-        <label for="">Ingredients
-        <input class="input"  type="text" value="{{ingredients}}" name="ingredients" required placeholder="*required*"></label>
-        <label for="">Instructions
-        <input class="input"  type="text" value="{{instructions}}" name="instructions" required placeholder="*required*"></label>
+        <label for="">Recipe Title</label>
+        <input class="input" type="text" value="{{title}}" name="title" required placeholder="*required*">
+        <label for="">description</label>
+        <input class="input" type="text" value="{{description}}" name="description">
+        <label for="">Ingredients</label>
+        <input class="input"  type="text" value="{{ingredients}}" name="ingredients" required placeholder="*required*">
+        <label for="">Instructions</label>
+        <input class="input"  type="text" value="{{instructions}}" name="instructions" required placeholder="*required*">
     </div>
     <input type="submit" value="Update Recipe">
 </form>

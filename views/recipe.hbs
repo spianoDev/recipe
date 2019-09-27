@@ -1,11 +1,15 @@
+
+
 <h2>{{title}}</h2>
+<h6>Recipe Description:</h6>
+
 <h4>{{description}}</h4>
-
+<h6>Ingredients List:</h6>
 <h4><a href="/ingredients/{{ id }}">{{ingredients}}</a></h4>
-
-<h4>{{instructions}}</h4>
+<h6>Instructions:</h2>
+<h4>{{instructions}}</h6>
 
 <form action="/{{id}}?_method=delete" method="post">
-        <input type="submit" value="Delete recipe">
+        <input type="submit" class="button" value="Delete recipe">
 </form>
-<a href="/edit/{{id}}">Edit Recipe</a>
+<a href="/edit/{{id}}" class="link">Edit Recipe</a>
