@@ -2,13 +2,14 @@
 <h3>List of Ingredients for {{title}}</h3>
 <ul>
     {{#each ingredients}}
-   <li>{{this}}</li>
+        <li>
 <label for="complete"></label>
         {{#if complete}}
-            <input type="checkbox" checked>
+            <input  class="checks" type="checkbox" checked>
         {{else}}
-<input type="checkbox" >
+<input class="checks" type="checkbox" >
         {{/if}}
+        {{this}}</li>
     {{/each}}
 </ul>
 

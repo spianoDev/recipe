@@ -2,7 +2,66 @@
 body{
     font-size: 50px;
 }
-h1 {
-    color: red;
+h2, h3, h4 {
+    background-color: rgba(0, 0, 75, 0.76);
+    color: #f5deb3;
+}
+h1{
+    font-family: 'Permanent Marker', cursive;
+    background-color: #00004b;
+    color: #f5deb3;
+    text-align: center;
+    font-size: 80px;
+}
+h2 {
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    font-size: 65px;
+}
+h3 {
+    font-family: 'Chelsea Market', cursive;
+    text-align: center;
+    font-size: 55px;
+}
+h4{
+    font-family: 'Chelsea Market', cursive;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 40px;
+}
+h4 a {
+    color: #f5deb3;
+}
+a {
+    font-family: 'Chelsea Market', cursive;
+    text-decoration: none;
+    color: #00004b;
+}
+li {
+    font-family: 'Chelsea Market', cursive;
+    color: #00004b;
+    list-style: none;
+}
+.checks {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+form {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 350px;
 }
 
+.recipe-items {
+    display: block;
+    flex-wrap: wrap;
+    max-width: 450px;
+    font-family: 'Chelsea Market', cursive;
+    color: #00004b;
+}
+.input {
+    float: right;
+    margin-left: 320px;
+    margin-bottom: 50px;
+}
