@@ -15,8 +15,7 @@ router.post("/", (req, res) => {
         console.log(req.body);
         res.redirect("/");
     })
-})
-
+});
 
 router.get("/", (req, res) => {
     Recipe.find({}).then(recipes => {
@@ -31,11 +30,17 @@ router.get('/edit/:id', (req, res) => {
 router.get("/new", (req, res) => {
     res.render("new" )
 });
+router.get('/ingredients/:id', (req, res) => {
+    Recipe.findOne({ _id: req.params.id }).then( recipes => {
+        res.render("ingredients", recipes);
+    })
+});
 router.get("/:id", (req,res) => {
     Recipe.findOne({ _id: req.params.id }).then( recipes => {
         res.render("recipe", recipes);
     })
 });
+
 
 module.exports = router;
 
