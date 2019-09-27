@@ -31,6 +31,7 @@ h4, label{
 }
 h4 a {
     color: #f5deb3;
+    margin-left: 0;
 }
 h6 {
     margin:40px 0 0 40px;
@@ -60,7 +61,9 @@ form {
     flex-wrap: wrap;
     max-width: 350px;
 }
-
+h4 a:hover {
+    color: mediumpurple;
+}
 .recipe-items {
     display: block;
     flex-wrap: wrap;
@@ -68,13 +71,28 @@ form {
     font-family: 'Chelsea Market', cursive;
     color: #00004b;
 }
-.input {
-    float: right;
-    margin-left: 320px;
-    margin-bottom: 50px;
-}
-li a{
+.input-title {
+    padding: 15px;
+    font-size: 30px;
+    height: 40px;
+    width: 400px;
     margin-left: 40px;
+    margin-bottom: 40px;
+    word-wrap: break-word;
+}
+.input {
+    align-content: unset;
+    color: #00004b;
+    padding: 15px;
+    font-size: 30px;
+    height: 200px;
+    width: 400px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    word-wrap: break-spaces;
+}
+.input [type=text] {
+    text-align: start;
 }
 ul {
     padding: 0;
