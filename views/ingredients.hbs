@@ -1,4 +1,5 @@
-
+<!--https://emberigniter.com/handlebars-access-array-value-with-index/-->
+<!--https://handlebarsjs.com/block_helpers.html-->
 <h3>List of Ingredients for {{title}}</h3>
 <ul>
     {{#each ingredients}}
@@ -9,7 +10,7 @@
         {{else}}
 <input class="checks" type="checkbox" >
         {{/if}}
-        {{this}}</li>
+        {{splitIngredients this}}</li>
     {{/each}}
 </ul>
 

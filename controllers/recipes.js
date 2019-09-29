@@ -3,8 +3,6 @@ const express = require("express");
 const router = express.Router();
 const Recipe = require("../model/recipe.js");
 
-
-
 router.put("/:id", (req, res) => {
     Recipe.findOneAndUpdate({ _id: req.params.id}, req.body).then(recipes =>{
         res.redirect("/");
